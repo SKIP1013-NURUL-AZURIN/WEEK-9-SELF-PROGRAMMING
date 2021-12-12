@@ -1,0 +1,23 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Loan1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		double loan, year, totalAmount, monthlyPayment;
+		
+		System.out.println("Enter loan : ");
+		loan = sc.nextDouble();
+		System.out.println("Enter year : ");
+		year = sc.nextDouble();
+		
+		totalAmount = (loan *0.04 * year) + loan;
+		System.out.println("Total amount : " + totalAmount);
+		monthlyPayment = totalAmount / (year*12);
+		System.out.println("Monthly paymment : " + monthlyPayment);
+		
+
+	}
+
+}
